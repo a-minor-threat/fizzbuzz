@@ -11,7 +11,6 @@ if (isNaN(ask))
 fizzbuzz(ask);
 });
 
-
 function fizzbuzz(max) {
 for (var i=1;i<=max;i++)
 {
