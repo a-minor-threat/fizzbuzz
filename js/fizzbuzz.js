@@ -1,6 +1,19 @@
 window.onload = (function(){
 
-for (var i=1;i<=100;i++)
+var ask = parseInt(prompt("Supply a number"),10);
+
+if (isNaN(ask))
+{
+    alert("You did not enter in a number. Please reload page and try again.");
+    console.log("User did not enter a number.");
+}
+
+fizzbuzz(ask);
+});
+
+
+function fizzbuzz(max) {
+for (var i=1;i<=max;i++)
 {
     if (i%3 === 0 && i%5 === 0)
     {
@@ -14,4 +27,5 @@ for (var i=1;i<=100;i++)
     }
 
 }
-});
+
+}
